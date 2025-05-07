@@ -293,21 +293,20 @@ header h1 {
     animation: shimmer 8s infinite linear;
     background-size: 200% 100%;
     position: relative;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Underline animation */
-header h1::after {
-    content: '';
+header h1::before {
+    content: attr(data-text);
     position: absolute;
-    left: 25%;
-    bottom: -5px;
-    width: 50%;
-    height: 3px;
-    background: var(--gradient-2);
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: shimmer 3s infinite ease-in-out alternate;
-    box-shadow: var(--neon-glow);
+    left: 0;
+    top: 0;
+    color: transparent;
+    text-shadow: 0 0 15px var(--accent-highlight);
+    filter: blur(5px);
+    opacity: 0.7;
+    z-index: -1;
+    animation: pulse 3s infinite alternate;
 }
 
 header {
