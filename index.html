@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Explorer - Country Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="page-container">
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <h1>World Explorer</h1>
+            </div>
+            <p>Discover fascinating information about countries around the world</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <form id="search-form">
+                <div class="search-input-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input
+                            type="text"
+                            id="country-input"
+                            placeholder="Search for any country..."
+                            required
+                    >
+                </div>
+                <button type="submit"><i class="fas fa-globe"></i> Explore</button>
+            </form>
+            <div class="popular-searches">
+                <p>Popular searches: </p>
+                <span class="country-tag" data-country="japan">Japan</span>
+                <span class="country-tag" data-country="brazil">Brazil</span>
+                <span class="country-tag" data-country="canada">Canada</span>
+                <span class="country-tag" data-country="egypt">Egypt</span>
+            </div>
+        </section>
+
+        <section id="results-container">
+            <!-- Country results will be displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-globe"></i> World Explorer</h3>
+                <p>Explore countries and learn about cultures around the world</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Powered By</h3>
+                <p><a href="https://restcountries.com/" target="_blank">REST Countries API</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 World Explorer | Created for MIS455 Final Exam</p>
+        </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
